@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheetContainer"
+    android:background="@drawable/bottom_sheet_background">
+
+    <ImageView
+        android:id="@+id/imv_produk"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Persetujuan Pinjaman"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Persetujuan Pinjaman"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="32px"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_min"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/red"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="80px"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"
+            />
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/blue"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
